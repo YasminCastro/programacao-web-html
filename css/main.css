@@ -1,8 +1,8 @@
-body {
+* {
   margin: 0;
 }
 
-header ul {
+ul {
   list-style: none;
 }
 
@@ -11,6 +11,71 @@ a {
   text-decoration: none;
 }
 
-header {
+header { 
+  padding: 1rem;
   display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  background-color: bisque;
+}
+
+.header-menu{
+  display: flex; 
+  margin: 0 25rem 0 0;
+}
+
+.nav-bar{
+  display: flex;
+  margin: 1rem;
+  
+}
+
+.sobre-nos{
+  display:flex;
+  align-items: center;
+  margin: 2rem 5rem 2rem 5rem;
+}
+
+.sobre-nos img{
+  height: 400px;
+}
+
+
+.text-home{
+  margin: 2rem 5rem 2rem 5rem;
+
+}
+
+
+
+#buttons
+
+button {
+  margin: 20px;
+  outline: none;
+}
+
+.custom-btn {
+  width: 350px;
+  height: 50px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-1 {
+  transition: all 0.3s ease;
+}
+.btn-1:hover {
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
 }
