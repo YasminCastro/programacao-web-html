@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Página inicial</title>
@@ -8,43 +9,77 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <link rel="stylesheet" href="css/main.css" />
-  </head>
+    <link rel="stylesheet" href="css/buttons.css" />
+</head>
 
-  <body>
+<body>
     <header>
-      <img src="assets/logo.svg" alt="logo" />
-      <ul class="header-menu">
-        <li><a class="nav-bar" href="/">Página inicial</a></li>
-        <li><a class="nav-bar" href="cardapio/">Cárdapio</a></li>
-        <li><a class="nav-bar" href="envie-seu-comentario/">Comentários</a></li>
-      </ul>
+        <img src="assets/logo.svg" alt="logo" />
+        <ul class="header-menu">
+            <li><a class="header-links" href="/">Página inicial</a></li>
+            <li><a class="header-links" href="cardapio/">Cárdapio</a></li>
+            <li><a class="header-links" href="envie-seu-comentario/">Comentários</a></li>
+        </ul>
     </header>
 
-    <div class="inicial"> 
-      <h1>Good food choices are good investments.</h1>
-      <p>There is a powerful new for symbolism, and that means the architecture must have somenthig that appeals to the human heart.</p>
-        <button class="custom-btn btn-1" >Faça seu pedido</button>
+    <div id="home-page">
+        <section class="container-inicial">
+            <h1>Good food choices are good investments.</h1>
+            <p>There is a powerful new for symbolism, and that means the architecture must have somenthig that appeals to the human heart.</p>
+            <button class="custom-btn btn-1">Faça seu pedido</button>
+        </section>
+
+        <section class="container-sobre-nos">
+            <img src="https://mercadoeconsumo.com.br/wp-content/uploads/2019/04/Que-comida-saud%C3%A1vel-que-nada-brasileiro-gosta-de-fast-food.jpg">
+            <div class="sobre-nos-text">
+                <h2>Sobre nós</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor tincidunt vestibulum. Mauris vel ante et arcu eleifend rhoncus aliquet quis lacus. Quisque luctus lectus ac arcu cursus semper. Vivamus elit dui, pharetra ultricies nibh
+                    blandit, condimentum convallis augue. Nulla ornare, ante eu euismod tincidunt, urna felis interdum lectus, vitae sollicitudin lorem est non risus. Mauris urna nunc, aliquet id dapibus id, tristique vel metus. Sed at mi ac risus vulputate
+                    dignissim. Proin odio nulla, pulvinar et sodales vel, feugiat ac tortor. Pellentesque lorem tortor, facilisis a urna sed, gravida sollicitudin metus.</p>
+                <button class="custom-btn btn-1">Saiba mais</button>
+            </div>
+        </section>
+
+
+
+        <section class="container-venha-conhecer">
+
+            <div class="venha-nos-conhecer">
+                <h2>Venha conhecer!</h2>
+                <p class="text-home">Rua 75, n°46, Centro Centro, Goiânia - GO, 74055-110</p>
+                <button class="custom-btn btn-1">Abrir no Google Maps</button>
+            </div>
+
+            <img src="https://mercadoeconsumo.com.br/wp-content/uploads/2019/04/Que-comida-saud%C3%A1vel-que-nada-brasileiro-gosta-de-fast-food.jpg">
+        </section>
     </div>
 
-    <div class="sobre-nos">    
-     <img src="https://mercadoeconsumo.com.br/wp-content/uploads/2019/04/Que-comida-saud%C3%A1vel-que-nada-brasileiro-gosta-de-fast-food.jpg">
-      <div class="text-home">
-        <h2>Sobre nós</h2>
-        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor tincidunt vestibulum. Mauris vel ante et arcu eleifend rhoncus aliquet quis lacus. Quisque luctus lectus ac arcu cursus semper. Vivamus elit dui, pharetra ultricies nibh blandit, condimentum convallis augue. Nulla ornare, ante eu euismod tincidunt, urna felis interdum lectus, vitae sollicitudin lorem est non risus. Mauris urna nunc, aliquet id dapibus id, tristique vel metus. Sed at mi ac risus vulputate dignissim. Proin odio nulla, pulvinar et sodales vel, feugiat ac tortor. Pellentesque lorem tortor, facilisis a urna sed, gravida sollicitudin metus.</p>
-      </div> 
-    <button class="custom-btn btn-1">Saiba mais</button>
-    </div>
 
 
+    <footer>
 
-    <div class="venha-conhecer">
+        <div class="footer-container">
+            <img src="assets/logo.svg" alt="logo" />
 
-      <h2>Venha conhecer!</h2>
-      <p class="text-home">Rua 75, n°46, Centro Centro, Goiânia - GO, 74055-110</p>
-      <button class="custom-btn btn-1" >Abrir no Google Maps</button>
+            <div>
+                <ul class="footer-menu">
+                    <li><a class="footer-links" href="/">Página inicial</a></li>
+                    <li><a class="footer-links" href="cardapio/">Cárdapio</a></li>
+                    <li><a class="footer-links" href="envie-seu-comentario/">Comentários</a></li>
+                </ul>
+            </div>
 
-    </div>
+            <div>
+                <p>Rua 75, n° 46, Centro Centro, Goiânia - GO, 74055-110</p>
+                <a class="footer-links" href="https://goo.gl/maps/7jjDMiDfohb74sFY8" target="_blank">Abrir no Google Maps</a>
+            </div>
 
+        </div>
 
-  </body>
+        <p>Copyright </p>
+
+    </footer>
+
+</body>
+
 </html>

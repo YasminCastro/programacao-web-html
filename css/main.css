@@ -1,81 +1,100 @@
 * {
-  margin: 0;
+    margin: 0;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-header { 
-  padding: 1rem;
-  display: flex;
-  justify-content: flex-start; 
-  align-items: center;
-  background-color: bisque;
-}
-
-.header-menu{
-  display: flex; 
-  margin: 0 25rem 0 0;
-}
-
-.nav-bar{
-  display: flex;
-  margin: 1rem;
-  
-}
-
-.sobre-nos{
-  display:flex;
-  align-items: center;
-  margin: 2rem 5rem 2rem 5rem;
-}
-
-.sobre-nos img{
-  height: 400px;
+    color: inherit;
+    text-decoration: none;
 }
 
 
-.text-home{
-  margin: 2rem 5rem 2rem 5rem;
+/* Header */
 
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    margin: 0 25rem 0 0;
+}
+
+.header-links {
+    display: flex;
+    margin: 1rem;
 }
 
 
+/* Inicial */
 
-#buttons
-
-button {
-  margin: 20px;
-  outline: none;
+.container-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem 5rem 2rem 5rem;
 }
 
-.custom-btn {
-  width: 350px;
-  height: 50px;
-  padding: 10px 25px;
-  border: 2px solid #000;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
+.background-image {
+    background-image: url('https://st2.depositphotos.com/1010652/10747/v/950/depositphotos_107470690-stock-illustration-various-food-doodle-seamless-background.jpg');
 }
 
-.btn-1 {
-  transition: all 0.3s ease;
+
+/* Sobre nos */
+
+.container-sobre-nos {
+    display: flex;
+    align-items: flex-end;
+    margin: 2rem 5rem 2rem 5rem;
 }
-.btn-1:hover {
-   box-shadow:
-   -7px -7px 20px 0px #fff9,
-   -4px -4px 5px 0px #fff9,
-   7px 7px 20px 0px #0002,
-   4px 4px 5px 0px #0001;
+
+.sobre-nos-text {
+    margin: 2rem 5rem 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Venha nos conhecer */
+
+.venha-nos-conhecer {
+    margin: 2rem 5rem 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-venha-conhecer {
+    display: flex;
+    align-items: center;
+    margin: 2rem 5rem 2rem 5rem;
+}
+
+#home-page img {
+    width: 50%;
+    max-width: 35vw;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 2px rgba(163, 146, 146, 0.2);
+}
+
+
+/* footer */
+
+.footer-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
 }
