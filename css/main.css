@@ -1,63 +1,87 @@
 * {
-    margin: 0;
+  margin: 0;
+  font-family: "Mulish", sans-serif;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
+/* Banner */
+
+.banner {
+  width: 100%;
+  background-color: #fff5e8;
+  background-image: url(../assets/home/banner-home.svg);
+  background-position: center;
+  padding: 44px 124px 98px;
+}
 
 /* Inicial */
 
 .container-inicial {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 2rem 5rem 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 650px;
+  margin-top: 98px;
 }
 
-.background-image {
-    background-image: url('https://st2.depositphotos.com/1010652/10747/v/950/depositphotos_107470690-stock-illustration-various-food-doodle-seamless-background.jpg');
+.container-inicial h2 {
+  font-size: 56px;
+  font-weight: 200;
+  line-height: 66px;
+  margin-bottom: 44px;
 }
 
+.container-inicial p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 44px;
+}
 
 /* Sobre nos */
 
 .container-sobre-nos {
-    display: flex;
-    align-items: flex-end;
-    margin: 2rem 5rem 2rem 5rem;
+  display: flex;
+  align-items: flex-end;
+  margin: 2rem 5rem 2rem 5rem;
+}
+
+.container-sobre-nos img {
+  border-radius: 20px;
+  box-shadow: 0 0 0;
 }
 
 .sobre-nos-text {
-    margin: 2rem 5rem 2rem 5rem;
-    display: flex;
-    flex-direction: column;
+  margin: 2rem 5rem 2rem 5rem;
+  display: flex;
+  flex-direction: column;
 }
-
 
 /* Venha nos conhecer */
 
 .venha-nos-conhecer {
-    margin: 2rem 5rem 2rem 5rem;
-    display: flex;
-    flex-direction: column;
+  margin: 2rem 5rem 2rem 5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-venha-conhecer {
-    display: flex;
-    align-items: center;
-    margin: 2rem 5rem 2rem 5rem;
+  display: flex;
+  align-items: center;
+  margin: 2rem 5rem 2rem 5rem;
 }
 
-#home-page img {
-    width: 50%;
-    max-width: 35vw;
-    border-radius: 5%;
-    box-shadow: 5px 5px 5px 2px rgba(163, 146, 146, 0.2);
-}
+/* #home-page img {
+  width: 50%;
+  max-width: 35vw;
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px 2px rgba(163, 146, 146, 0.2);
+} */
