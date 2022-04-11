@@ -1,30 +1,116 @@
-section img {
-    width: 50%;
-    width: 300px;
-    box-shadow: 5px 5px 5px 2px rgba(163, 146, 146, 0.2);
+#cardapio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cardapio h2 {
+  font-size: 56px;
+  font-weight: 300;
+  text-align: center;
+}
+#cardapio .cardapio-flex {
+  display: flex;
+  max-width: 1032px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 44px;
+  gap: 32px;
+}
+.cardapio-flex .cardapio-item {
+  width: 320px;
+  overflow: hidden;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.cardapio-item .descricao {
+  padding: 24px;
 }
 
-.description {
-    display: flex;
-    flex-direction: column;
+.cardapio-item .descricao .titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
 }
-
-.title-price {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.cardapio-item .descricao .titulo h3 {
+  font-size: 18px;
+  color: #0c3653;
+  font-weight: 700;
 }
-
-.food-wrap {
-    display: flex;
-    flex-direction: column;
+.cardapio-item .descricao .titulo p {
+  font-size: 24px;
+  color: #ff9b43;
+  font-weight: 700;
 }
-
-.food-wrap {
-    margin: 20px;
-    width: 300px;
-    padding: 5px;
-    display: table-cell;
-    border-radius: 5%;
-    box-shadow: 5px 5px 5px 2px rgba(163, 146, 146, 0.2);
+.cardapio-item .descricao p {
+  color: #aeb2b4;
+  font-size: 14px;
+}
+#cardapio .pratos-flex {
+  display: flex;
+  width: 1497px;
+  padding: 0 64px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-self: center;
+  margin: 98px 0 44px;
+  gap: 32px;
+  overflow: hidden;
+}
+.pratos-flex .pratos-item {
+  position: relative;
+  height: 350px;
+  width: 350px;
+  border-radius: 8px;
+  gap: 16px;
+  overflow: hidden;
+}
+.pratos-flex .pratos-item img {
+  position: absolute;
+  height: inherit;
+  z-index: 1;
+}
+.pratos-flex .pratos-item .descricao {
+  display: flex;
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgba(10, 50, 75, 0.64);
+  z-index: 2;
+}
+.pratos-flex .pratos-item:hover .descricao {
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+.pratos-flex .pratos-item:hover .descricao h3 {
+  font-size: 22px;
+  color: #fff;
+  padding: 0 32px;
+}
+.pratos-flex .pratos-item:hover .descricao p {
+  color: #fff;
+  padding: 0 32px;
+}
+.pratos-flex .pratos-item .descricao button {
+  display: flex;
+  height: 45px;
+  width: 82px;
+  background-color: #ff9b43;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.pratos-flex .pratos-item .descricao button img {
+  height: 12px;
+}
+#cardapio .btn-1 {
+  align-self: center;
 }

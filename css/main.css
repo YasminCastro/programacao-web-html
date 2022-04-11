@@ -1,5 +1,74 @@
-* {
+@charset "utf-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+* {
   font-family: "Mulish", sans-serif;
 }
 
@@ -11,11 +80,14 @@ a {
   color: inherit;
   text-decoration: none;
 }
+h3 {
+  font-size: 36px;
+  font-weight: 800;
+}
 
 /* Banner */
 
 .banner {
-  width: 100%;
   background-color: #fff5e8;
   background-image: url(../images/banner-home.svg);
   background-position: center;
@@ -51,37 +123,53 @@ a {
 .container-sobre-nos {
   display: flex;
   align-items: flex-end;
-  margin: 2rem 5rem 2rem 5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 124px 5rem 98px;
+  gap: 98px;
 }
 
 .container-sobre-nos img {
-  border-radius: 20px;
-  box-shadow: 0 0 0;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.1);
 }
 
 .sobre-nos-text {
-  margin: 2rem 5rem 2rem 5rem;
   display: flex;
+  max-width: 510px;
   flex-direction: column;
+  gap: 32px;
+}
+.sobre-nos-text button {
+  align-self: flex-start;
 }
 
 /* Venha nos conhecer */
 
-.venha-nos-conhecer {
-  margin: 2rem 5rem 2rem 5rem;
+.venha-conhecer {
   display: flex;
-  flex-direction: column;
-}
-
-.container-venha-conhecer {
-  display: flex;
+  margin: 0 5rem;
   align-items: center;
-  margin: 2rem 5rem 2rem 5rem;
+  justify-content: center;
+  gap: 98px;
 }
 
-/* #home-page img {
-  width: 50%;
-  max-width: 35vw;
-  border-radius: 5%;
-  box-shadow: 5px 5px 5px 2px rgba(163, 146, 146, 0.2);
-} */
+.venha-conhecer .container {
+  display: flex;
+  width: 100%;
+  max-width: 510px;
+  flex-direction: column;
+  gap: 32px;
+}
+.venha-conhecer button {
+  align-self: flex-start;
+}
+.venha-conhecer iframe {
+  height: 400px;
+  width: 100%;
+  max-width: 510px;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.1);
+}

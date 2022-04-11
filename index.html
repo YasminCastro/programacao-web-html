@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Página inicial</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="main.js"></script>
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/buttons.css" />
     <link rel="stylesheet" href="css/header-footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +22,9 @@
       <header>
         <img src="images/logo.svg" alt="logo" />
         <ul class="header-menu">
-          <li><a class="header-links" href="/">Página inicial</a></li>
+          <li class="active">
+            <a class="header-links" href="/">Página inicial</a>
+          </li>
           <li><a class="header-links" href="cardapio/">Cárdapio</a></li>
           <li>
             <a class="header-links" href="envie-seu-comentario/">Comentários</a>
@@ -37,14 +38,16 @@
           There is a powerful new for symbolism, and that means the architecture
           must have somenthig that appeals to the human heart.
         </p>
-        <button class="custom-btn btn-1">Faça seu pedido</button>
+        <button class="custom-btn btn-1" onclick="location.href='cardapio/'">
+          Faça seu pedido
+        </button>
       </section>
     </div>
 
     <section class="container-sobre-nos">
       <img src="images/food-pagina-inicial.jpg" alt="Prato de comida" />
       <div class="sobre-nos-text">
-        <h2>Sobre nós</h2>
+        <h3>Sobre nós</h3>
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -55,12 +58,10 @@
       </div>
     </section>
 
-    <section class="container-venha-conhecer">
-      <div class="venha-nos-conhecer">
-        <h2>Venha conhecer!</h2>
-        <p class="text-home">
-          Rua 75, n°46, Centro Centro, Goiânia - GO, 74055-110
-        </p>
+    <section class="venha-conhecer">
+      <div class="container">
+        <h3>Venha conhecer!</h3>
+        <p>Rua 75, n°46, Centro Centro, Goiânia - GO, 74055-110</p>
         <button class="custom-btn btn-1">Abrir no Google Maps</button>
       </div>
 
@@ -71,29 +72,31 @@
     </section>
 
     <footer>
-      <div class="footer-container">
-        <img src="images/logo.svg" alt="logo" />
+      <img src="images/logo.svg" alt="logo" />
 
-        <div>
+      <div class="footer-container">
+        <div class="footer-nav">
           <ul class="footer-menu">
             <li><a href="/">Página inicial</a></li>
             <li><a href="cardapio/">Cárdapio</a></li>
             <li><a href="envie-seu-comentario/">Comentários</a></li>
           </ul>
+
+          <div class="endereco">
+            <p>Rua 75, n° 46, Centro Centro, Goiânia - GO, 74055-110</p>
+            <a
+              class="footer-links"
+              href="https://goo.gl/maps/7jjDMiDfohb74sFY8"
+              target="_blank"
+              >Abrir no Google Maps</a
+            >
+          </div>
         </div>
 
-        <div>
-          <p>Rua 75, n° 46, Centro Centro, Goiânia - GO, 74055-110</p>
-          <a
-            class="footer-links"
-            href="https://goo.gl/maps/7jjDMiDfohb74sFY8"
-            target="_blank"
-            >Abrir no Google Maps</a
-          >
-        </div>
+        <p id="copyright">
+          Copyright © Yasmin, 2022. Todos os direitos reservados.
+        </p>
       </div>
-
-      <p>Copyright</p>
     </footer>
   </body>
 </html>

@@ -5,67 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Envie seu comentário</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
     <script src="main.js"></script>
     <link rel="stylesheet" href="../css/header-footer.css" />
     <link rel="stylesheet" href="../css/envie-seu-comentario.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <header>
+    <header class="header-internal-padding">
       <img src="../images/logo.svg" alt="logo" />
       <ul class="header-menu">
         <li><a class="header-links" href="/">Página inicial</a></li>
         <li><a class="header-links" href="../cardapio/">Cárdapio</a></li>
-        <li><a class="header-links" href="">Comentários</a></li>
+        <li class="active"><a class="header-links" href="">Comentários</a></li>
       </ul>
     </header>
 
-    <form id="envie-comentario">
-      <h1>Envie seu comentário</h1>
+    <section id="envie-comentario">
+      <h2>Envie seu comentário</h2>
       <p>
         Envie um comentário com uma crítica ou elogio. Sua opnião é importante
         para nós.
       </p>
+      <form id="comentario-form">
+        <input type="text" placeholder="Nome*" required />
+        <input type="email" placeholder="E-mail*" required />
+        <input type="text" placeholder="Sexo" />
+        <select id="unidades">
+          <option value="">Unidade</option>
+          <option value="Goiânia">Goiânia</option>
+          <option value="Aparecida de Goiânia">Aparecida de Goiânia</option>
+        </select>
 
-      <input type="text" placeholder="Nome*" required />
-      <input type="email" placeholder="E-mail*" required />
-      <input type="text" placeholder="Sexo" />
-      <input list="unidades" name="unidade" placeholder="Unidade" />
-      <datalist id="unidades">
-        <option value="Goiânia"></option>
-        <option value="Aparecida de Goiânia"></option>
-      </datalist>
-
-      <textarea name="envie-comentario" rows="25" cols="60"></textarea>
-      <input type="submit" class="custom-btn btn-1" />
-    </form>
+        <textarea
+          name="envie-comentario"
+          rows="25"
+          cols="60"
+          placeholder="Mensagem"
+        ></textarea>
+        <input type="submit" class="custom-btn btn-1" value="Enviar" />
+      </form>
+    </section>
 
     <footer>
-      <div class="footer-container">
-        <img src="../images/logo.svg" alt="logo" />
+      <img src="../images/logo.svg" alt="logo" />
 
-        <div>
+      <div class="footer-container">
+        <div class="footer-nav">
           <ul class="footer-menu">
             <li><a href="/">Página inicial</a></li>
-            <li><a href="../cardapio/">Cárdapio</a></li>
-            <li><a href="">Comentários</a></li>
+            <li><a href="cardapio/">Cárdapio</a></li>
+            <li><a href="envie-seu-comentario/">Comentários</a></li>
           </ul>
+
+          <div class="endereco">
+            <p>Rua 75, n° 46, Centro Centro, Goiânia - GO, 74055-110</p>
+            <a
+              class="footer-links"
+              href="https://goo.gl/maps/7jjDMiDfohb74sFY8"
+              target="_blank"
+              >Abrir no Google Maps</a
+            >
+          </div>
         </div>
 
-        <div>
-          <p>Rua 75, n° 46, Centro Centro, Goiânia - GO, 74055-110</p>
-          <a
-            class="footer-links"
-            href="https://goo.gl/maps/7jjDMiDfohb74sFY8"
-            target="_blank"
-            >Abrir no Google Maps</a
-          >
-        </div>
+        <p id="copyright">
+          Copyright © Yasmin, 2022. Todos os direitos reservados.
+        </p>
       </div>
-
-      <p>Copyright</p>
     </footer>
   </body>
 </html>

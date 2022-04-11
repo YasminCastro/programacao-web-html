@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Cardápio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
     <script src="main.js"></script>
     <link rel="stylesheet" href="../css/header-footer.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/cardapio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <header>
+    <header class="header-internal-padding">
       <img src="../images/logo.svg" alt="logo" />
       <ul class="header-menu">
         <li><a class="header-links" href="/">Página inicial</a></li>
-        <li><a class="header-links" href="">Cárdapio</a></li>
+        <li class="active"><a class="header-links" href="">Cárdapio</a></li>
         <li>
           <a class="header-links" href="../envie-seu-comentario/"
             >Comentários</a
@@ -26,100 +37,150 @@
       </ul>
     </header>
 
-    <div class="food-container">
-      <h1>Cárdapio</h1>
-
-      <section class="food-wrap">
-        <img src="../images/sandwich.png" alt="Sanduiche" />
-        <div class="description">
-          <div class="title-price">
-            <h3>Sanduiche</h3>
-            <p>$10</p>
+    <section id="cardapio">
+      <h2>Cardápio</h2>
+      <div class="cardapio-flex">
+        <div class="cardapio-item">
+          <img src="../images/sandwich.jpg" alt="item do cardapio" />
+          <div class="descricao">
+            <div class="titulo">
+              <h3>Sanduíche</h3>
+              <p>R$22.90</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-      </section>
 
-      <section class="food-wrap">
-        <img src="../images/cake.jpg" alt="Bolo" />
-        <div class="description">
-          <div class="title-price">
-            <h3>Bolo</h3>
-            <p>$10.50</p>
+        <div class="cardapio-item">
+          <img src="../images/cherry-cake.jpg" alt="item do cardapio" />
+          <div class="descricao">
+            <div class="titulo">
+              <h3>Cherry Cake</h3>
+              <p>R$14.90</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-      </section>
 
-      <section class="food-wrap">
-        <img src="../images/cupcake.jpg" alt="Cupcake" />
-        <div class="description">
-          <div class="title-price">
-            <h3>Cupcake</h3>
-            <p>$5</p>
+        <div class="cardapio-item">
+          <img src="../images/cake.jpg" alt="item do cardapio" />
+          <div class="descricao">
+            <div class="titulo">
+              <h3>Bolo de Chocolate</h3>
+              <p>R$15.00</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-      </section>
 
-      <section class="food-wrap">
-        <img src="../images/cherry-cake.jpg" alt="Bolo de cereja" />
-        <div class="description">
-          <div class="title-price">
-            <h3>Bolo de cereja</h3>
-            <p>$7</p>
+        <div class="cardapio-item">
+          <img src="../images/cupcake.jpg" alt="item do cardapio" />
+          <div class="descricao">
+            <div class="titulo">
+              <h3>Cupcake</h3>
+              <p>R$10.50</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-      </section>
 
-      <section class="food-wrap">
-        <img src="../images/tomato-salad.jpg" alt="Salada de tomate" />
-        <div class="description">
-          <div class="title-price">
-            <h3>Salada de tomate</h3>
-            <p>$13</p>
+        <div class="cardapio-item">
+          <img src="../images/beef.jpg" alt="item do cardapio" />
+          <div class="descricao">
+            <div class="titulo">
+              <h3>Bife</h3>
+              <p>R$26.00</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-      </section>
 
-      <section class="food-wrap">
-        <img src="../images/beef.jpg" alt="Beef" />
-        <div class="description">
-          <div class="title-price">
-            <h3>Beef</h3>
-            <p>$18</p>
+        <div class="cardapio-item">
+          <img src="../images/tomato-salad.jpg" alt="item do cardapio" />
+          <div class="descricao">
+            <div class="titulo">
+              <h3>Salada</h3>
+              <p>R$12.50</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </section>
-    </div>
-
-    <footer>
-      <div class="footer-container">
-        <img src="../images/logo.svg" alt="logo" />
-
-        <div>
-          <ul class="footer-menu">
-            <li><a href="/">Página inicial</a></li>
-            <li><a href="">Cárdapio</a></li>
-            <li><a href="../envie-seu-comentario/">Comentários</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <p>Rua 75, n° 46, Centro Centro, Goiânia - GO, 74055-110</p>
-          <a
-            class="footer-links"
-            href="https://goo.gl/maps/7jjDMiDfohb74sFY8"
-            target="_blank"
-            >Abrir no Google Maps</a
-          >
         </div>
       </div>
 
-      <p>Copyright</p>
+      <div class="pratos-flex">
+        <div class="pratos-item">
+          <img src="../images/prato1.jpg" alt="prato" />
+          <div class="descricao">
+            <h3>Crinkle Top Brownies</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+            <button>
+              <img src="../images/seta.svg" alt="seta para direita" />
+            </button>
+          </div>
+        </div>
+
+        <div class="pratos-item">
+          <img src="../images/prato2.jpg" alt="prato" />
+          <div class="descricao">
+            <h3>Crinkle Top Brownies</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+            <button>
+              <img src="../images/seta.svg" alt="seta para direita" />
+            </button>
+          </div>
+        </div>
+
+        <div class="pratos-item">
+          <img src="../images/prato3.jpg" alt="prato" />
+          <div class="descricao">
+            <h3>Crinkle Top Brownies</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+            <button>
+              <img src="../images/seta.svg" alt="seta para direita" />
+            </button>
+          </div>
+        </div>
+
+        <div class="pratos-item">
+          <img src="../images/prato4.jpg" alt="prato" />
+          <div class="descricao">
+            <h3>Crinkle Top Brownies</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+            <button>
+              <img src="../images/seta.svg" alt="seta para direita" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="custom-btn">Explorar cardápio</button>
+    </section>
+
+    <footer>
+      <img src="../images/logo.svg" alt="logo" />
+
+      <div class="footer-container">
+        <div class="footer-nav">
+          <ul class="footer-menu">
+            <li><a href="/">Página inicial</a></li>
+            <li><a href="cardapio/">Cárdapio</a></li>
+            <li><a href="envie-seu-comentario/">Comentários</a></li>
+          </ul>
+
+          <div class="endereco">
+            <p>Rua 75, n° 46, Centro Centro, Goiânia - GO, 74055-110</p>
+            <a
+              class="footer-links"
+              href="https://goo.gl/maps/7jjDMiDfohb74sFY8"
+              target="_blank"
+              >Abrir no Google Maps</a
+            >
+          </div>
+        </div>
+
+        <p id="copyright">
+          Copyright © Yasmin, 2022. Todos os direitos reservados.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

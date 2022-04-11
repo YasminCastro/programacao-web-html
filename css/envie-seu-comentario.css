@@ -1,14 +1,48 @@
 * {
-    margin: 0;
+  margin: 0;
 }
-
 #envie-comentario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+#envie-comentario h2 {
+  font-size: 56px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 32px;
+}
+#comentario-form {
+  display: flex;
+  width: 100%;
+  max-width: 470px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+  gap: 16px;
+}
+input,
+select,
 textarea {
-    resize: none;
+  min-height: 44px;
+  width: inherit !important;
+  padding: 0 24px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+select,
+option {
+  background-color: #fff;
+}
+textarea {
+  height: 256px;
+  padding: 16px 24px;
+  resize: none;
+}
+input[type="submit"] {
+  width: auto !important;
+  align-self: center;
 }
