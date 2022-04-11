@@ -17,7 +17,7 @@ a {
 .banner {
   width: 100%;
   background-color: #fff5e8;
-  background-image: url(../assets/home/banner-home.svg);
+  background-image: url(../images/banner-home.svg);
   background-position: center;
   padding: 44px 124px 98px;
 }

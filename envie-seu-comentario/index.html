@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Envie seu comentário</title>
@@ -11,65 +10,62 @@
     <link rel="stylesheet" href="../css/header-footer.css" />
     <link rel="stylesheet" href="../css/envie-seu-comentario.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <header>
-        <img src="../assets/logo.svg" alt="logo" />
-        <ul class="header-menu">
-            <li><a class="header-links" href="/">Página inicial</a></li>
-            <li><a class="header-links" href="../cardapio/">Cárdapio</a></li>
-            <li><a class="header-links" href="">Comentários</a></li>
-        </ul>
+      <img src="../images/logo.svg" alt="logo" />
+      <ul class="header-menu">
+        <li><a class="header-links" href="/">Página inicial</a></li>
+        <li><a class="header-links" href="../cardapio/">Cárdapio</a></li>
+        <li><a class="header-links" href="">Comentários</a></li>
+      </ul>
     </header>
 
-
     <form id="envie-comentario">
-        <h1>Envie seu comentário</h1>
-        <p>Envie um comentário com uma crítica ou elogio. Sua opnião é importante para nós.</p>
+      <h1>Envie seu comentário</h1>
+      <p>
+        Envie um comentário com uma crítica ou elogio. Sua opnião é importante
+        para nós.
+      </p>
 
-        <input type="text" placeholder="Nome*" required>
-        <input type="email" placeholder="E-mail*" required>
-        <input type="text" placeholder="Sexo">
-        <input list="unidades" name="unidade" placeholder="Unidade">
-        <datalist id="unidades">
-              <option value="Goiânia">
-              <option value="Aparecida de Goiânia">
-          </datalist>
-        <textarea name="envie-comentario" rows="25" cols="60"></textarea>
-        <input type="submit" class="custom-btn btn-1">
+      <input type="text" placeholder="Nome*" required />
+      <input type="email" placeholder="E-mail*" required />
+      <input type="text" placeholder="Sexo" />
+      <input list="unidades" name="unidade" placeholder="Unidade" />
+      <datalist id="unidades">
+        <option value="Goiânia"></option>
+        <option value="Aparecida de Goiânia"></option>
+      </datalist>
 
+      <textarea name="envie-comentario" rows="25" cols="60"></textarea>
+      <input type="submit" class="custom-btn btn-1" />
     </form>
 
-
-
     <footer>
+      <div class="footer-container">
+        <img src="../images/logo.svg" alt="logo" />
 
-        <div class="footer-container">
-            <img src="../assets/logo.svg" alt="logo" />
-
-            <div>
-                <ul class="footer-menu">
-                    <li><a href="/">Página inicial</a></li>
-                    <li><a href="../cardapio/">Cárdapio</a></li>
-                    <li><a href="">Comentários</a></li>
-                </ul>
-            </div>
-
-
-            <div>
-                <p>Rua 75, n° 46, Centro Centro, Goiânia - GO, 74055-110</p>
-                <a class="footer-links" href="https://goo.gl/maps/7jjDMiDfohb74sFY8" target="_blank">Abrir no Google Maps</a>
-            </div>
-
+        <div>
+          <ul class="footer-menu">
+            <li><a href="/">Página inicial</a></li>
+            <li><a href="../cardapio/">Cárdapio</a></li>
+            <li><a href="">Comentários</a></li>
+          </ul>
         </div>
 
-        <p>Copyright </p>
+        <div>
+          <p>Rua 75, n° 46, Centro Centro, Goiânia - GO, 74055-110</p>
+          <a
+            class="footer-links"
+            href="https://goo.gl/maps/7jjDMiDfohb74sFY8"
+            target="_blank"
+            >Abrir no Google Maps</a
+          >
+        </div>
+      </div>
 
+      <p>Copyright</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
